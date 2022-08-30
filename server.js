@@ -7,6 +7,10 @@ const exerciseRoutes = require("./routes/exercises");
 // express app
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send("Hello, World!");
+});
+
 // middleware
 app.use(express.json());
 
